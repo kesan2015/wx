@@ -26,6 +26,7 @@ var checkSignature = function(signature, timestamp, nonce, echostr, cb) {
 
 // 接收普通消息
 var receiveMessage = function(msg, cb) {
+	console.log('res:', msg.xml.Content);
   var result = {
     xml: {
       ToUserName: msg.xml.FromUserName[0],
